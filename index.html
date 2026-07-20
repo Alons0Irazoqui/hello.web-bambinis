@@ -36,7 +36,7 @@
 <!-- Performance -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="image" href="imagenes/725751194_1640568991283078_3446254366565960796_n.jpg" fetchpriority="high">
+<link rel="preload" as="image" href="https://images.pexels.com/photos/1148998/pexels-photo-1148998.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600" fetchpriority="high">
 
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Pacifico&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
@@ -89,7 +89,7 @@
 </div>
 
 <!-- ==================== HEADER ==================== -->
-<header class="site-header" id="site-header">
+<header class="site-header grain" id="site-header">
   <div class="container header-inner">
     <a href="#inicio" class="logo" aria-label="Bambinis — Inicio">
       <img src="imagenes/logo.png" alt="Bambinis Guardería y Estancia Infantil" width="500" height="500" class="logo-img">
@@ -113,6 +113,7 @@
       </button>
     </div>
   </div>
+  <span class="scroll-progress" id="scroll-progress" aria-hidden="true"></span>
 </header>
 
 <!-- ==================== MOBILE NAV ==================== -->
@@ -174,12 +175,15 @@
       </div>
 
       <div class="hero-visual reveal-scale" data-delay="2">
+        <div class="hero-accent-photo" aria-hidden="true">
+          <img src="imagenes/convivencia-granja.jpg" alt="" width="960" height="720" loading="eager">
+        </div>
         <div class="hero-frame">
-          <img src="imagenes/725751194_1640568991283078_3446254366565960796_n.jpg" alt="Mamá y su peque sonriendo en las áreas al aire libre de Bambinis" width="1153" height="2048" loading="eager" fetchpriority="high">
+          <img src="https://images.pexels.com/photos/1148998/pexels-photo-1148998.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600" alt="Manos de un niño cubiertas de pintura de colores durante una manualidad en Bambinis" width="1200" height="900" loading="eager" fetchpriority="high">
           <span class="hero-frame-corner tl" aria-hidden="true"></span>
           <span class="hero-frame-corner br" aria-hidden="true"></span>
         </div>
-        <div class="hero-tag-card">
+        <div class="hero-tag-card grain">
           <span class="hero-tag-number">11.5</span>
           <span class="hero-tag-label">horas de horario<br>extendido, cada día</span>
         </div>
@@ -196,18 +200,22 @@
   <section class="stats" aria-label="Bambinis en cifras">
     <div class="container stats-grid">
       <div class="stat reveal-up">
+        <span class="stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 3.5h6v2.3c1.4.6 2.3 2 2.3 3.6V19a2 2 0 01-2 2h-6.6a2 2 0 01-2-2V9.4c0-1.6.9-3 2.3-3.6V3.5z" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M7.7 12.5h8.6M7.7 15.5h8.6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg></span>
         <span class="stat-number" data-target="2" data-prefix="Desde " data-suffix=" años">Desde 0 años</span>
         <span class="stat-label">Recibimos desde Lactantes y Maternal</span>
       </div>
       <div class="stat reveal-up" data-delay="1">
+        <span class="stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l7 4v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V7l7-4z" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         <span class="stat-number" data-target="10" data-suffix=" años">0 años</span>
         <span class="stat-label">Hasta los 10 Años de Edad</span>
       </div>
       <div class="stat reveal-up" data-delay="2">
+        <span class="stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M12 7.5V12l3.2 2" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         <span class="stat-number" data-target="3">0</span>
         <span class="stat-label">Horarios Flexibles para tu Familia</span>
       </div>
       <div class="stat reveal-up" data-delay="3">
+        <span class="stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2.5" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M4 9.5h16M8 3v3.5M16 3v3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M9 14l2 2 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         <span class="stat-number" data-target="5">0</span>
         <span class="stat-label">Actividades y Talleres cada Semana</span>
       </div>
@@ -418,6 +426,59 @@
     </div>
   </section>
 
+  <!-- ==================== GALERÍA ==================== -->
+  <section class="gallery" id="galeria">
+    <div class="container">
+      <div class="section-head reveal-blur">
+        <p class="eyebrow">Instalaciones y Vida en Bambinis</p>
+        <h2>Así se vive un día en Bambinis</h2>
+        <p class="section-lead">Fotografías reales de nuestras instalaciones, actividades y celebraciones: un vistazo genuino a lo que tu hijo vive cada día con nosotros.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <button type="button" class="gallery-item is-wide reveal-scale" data-full="imagenes/actividad-alberca.jpg" data-caption="Diversión acuática en un ambiente seguro y siempre supervisado">
+          <img src="imagenes/actividad-alberca.jpg" alt="Niños de Bambinis disfrutando de la alberca en un evento recreativo, acompañados y supervisados" width="1080" height="810" loading="lazy">
+          <span class="gallery-overlay"><span>Actividades Recreativas</span></span>
+        </button>
+
+        <button type="button" class="gallery-item is-tall reveal-scale" data-delay="1" data-full="imagenes/725751194_1640568991283078_3446254366565960796_n.jpg" data-caption="Celebrando el Día del Papá: momentos que fortalecen el vínculo en familia">
+          <img src="imagenes/725751194_1640568991283078_3446254366565960796_n.jpg" alt="Mamá y su hijo celebrando el Día del Papá junto a las manualidades hechas en Bambinis" width="1153" height="2048" loading="lazy">
+          <span class="gallery-overlay"><span>Celebraciones en Familia</span></span>
+        </button>
+
+        <button type="button" class="gallery-item reveal-scale" data-delay="2" data-full="imagenes/dia-del-nino-disfraces.jpg" data-caption="Celebrando el Día del Niño con disfraces, música y mucha energía">
+          <img src="imagenes/dia-del-nino-disfraces.jpg" alt="Maestros disfrazados de superhéroes celebrando el Día del Niño junto a los alumnos de Bambinis" width="1080" height="810" loading="lazy">
+          <span class="gallery-overlay"><span>Día del Niño</span></span>
+        </button>
+
+        <button type="button" class="gallery-item reveal-scale" data-delay="3" data-full="imagenes/convivencia-granja.jpg" data-caption="Convivencia con animalitos: aprender jugando y en contacto con la naturaleza">
+          <img src="imagenes/convivencia-granja.jpg" alt="Niños de Bambinis alimentando a un burrito durante una convivencia con animales de granja" width="960" height="720" loading="lazy">
+          <span class="gallery-overlay"><span>Convivencia y Naturaleza</span></span>
+        </button>
+
+        <button type="button" class="gallery-item reveal-scale" data-delay="0" data-full="imagenes/evento-salon-bambinis.jpg" data-caption="Eventos y presentaciones dentro de nuestras instalaciones">
+          <img src="imagenes/evento-salon-bambinis.jpg" alt="Grupo de niños de Bambinis reunidos durante un evento en las instalaciones de la guardería" width="1080" height="810" loading="lazy">
+          <span class="gallery-overlay"><span>Eventos en Bambinis</span></span>
+        </button>
+
+        <button type="button" class="gallery-item is-wide reveal-scale" data-delay="1" data-full="imagenes/manualidad-autos-carton.jpg" data-caption="Manualidades en familia: autos de cartón para celebrar el Día del Papá">
+          <img src="imagenes/manualidad-autos-carton.jpg" alt="Niños de Bambinis mostrando autos hechos de cartón junto a sus maestras, para el Día del Papá" width="1080" height="608" loading="lazy">
+          <span class="gallery-overlay"><span>Manualidades en Grupo</span></span>
+        </button>
+
+        <button type="button" class="gallery-item reveal-scale" data-delay="2" data-full="imagenes/juego-boliche-motricidad.jpg" data-caption="Juegos que desarrollan la motricidad, la puntería y el trabajo en equipo">
+          <img src="imagenes/juego-boliche-motricidad.jpg" alt="Niño de Bambinis jugando boliche en el área de juegos al aire libre" width="1080" height="810" loading="lazy">
+          <span class="gallery-overlay"><span>Juegos Didácticos</span></span>
+        </button>
+
+        <button type="button" class="gallery-item is-tall reveal-scale" data-delay="0" data-full="imagenes/727346832_1640569194616391_9210332616858566794_n.jpg" data-caption="Manualidades que despiertan su creatividad: autos de cartón hechos por ellos mismos">
+          <img src="imagenes/727346832_1640569194616391_9210332616858566794_n.jpg" alt="Niños de Bambinis mostrando sus manualidades de autos hechos con cajas de cartón, frente a paredes pintadas de colores" width="1152" height="2048" loading="lazy">
+          <span class="gallery-overlay"><span>Manualidades y Creatividad</span></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
   <!-- ==================== UBÍCANOS ==================== -->
   <section class="location" id="ubicacion">
     <div class="container">
@@ -447,44 +508,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== GALERÍA ==================== -->
-  <section class="gallery" id="galeria">
-    <div class="container">
-      <div class="section-head reveal-blur">
-        <p class="eyebrow">Galería</p>
-        <h2>Así se vive un día en Bambinis</h2>
-        <p class="section-lead">Un vistazo real a los espacios, actividades y sonrisas que hacen especial cada día en nuestra guardería.</p>
-      </div>
-
-      <div class="gallery-grid">
-        <button type="button" class="gallery-item is-wide reveal-scale" data-full="https://images.pexels.com/photos/35136501/pexels-photo-35136501.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600" data-caption="Actividad física y juego al aire libre, todos los días">
-          <img src="https://images.pexels.com/photos/35136501/pexels-photo-35136501.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600" alt="Niños jugando en un resbaladero colorido al aire libre" width="1600" height="800" loading="lazy">
-          <span class="gallery-overlay"><span>Actividad Física y Juego</span></span>
-        </button>
-
-        <button type="button" class="gallery-item is-tall reveal-scale" data-delay="1" data-full="imagenes/727346832_1640569194616391_9210332616858566794_n.jpg" data-caption="Manualidades que despiertan su creatividad: autos de cartón hechos por ellos mismos">
-          <img src="imagenes/727346832_1640569194616391_9210332616858566794_n.jpg" alt="Niños de Bambinis mostrando sus manualidades de autos hechos con cajas de cartón" width="1152" height="2048" loading="lazy">
-          <span class="gallery-overlay"><span>Manualidades y Creatividad</span></span>
-        </button>
-
-        <button type="button" class="gallery-item reveal-scale" data-delay="2" data-full="https://images.pexels.com/photos/8535236/pexels-photo-8535236.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600" data-caption="Juegos didácticos: aprender jugando, todos los días">
-          <img src="https://images.pexels.com/photos/8535236/pexels-photo-8535236.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600" alt="Niños jugando con juegos didácticos de colores en el salón" width="900" height="900" loading="lazy">
-          <span class="gallery-overlay"><span>Juegos Didácticos</span></span>
-        </button>
-
-        <button type="button" class="gallery-item reveal-scale" data-delay="3" data-full="https://images.pexels.com/photos/8617970/pexels-photo-8617970.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600" data-caption="Nuestro equipo, siempre cerca de cada niño">
-          <img src="https://images.pexels.com/photos/8617970/pexels-photo-8617970.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600" alt="Maestra de Bambinis conviviendo con un grupo de niños en el salón" width="900" height="900" loading="lazy">
-          <span class="gallery-overlay"><span>Equipo Cercano y Cálido</span></span>
-        </button>
-
-        <button type="button" class="gallery-item is-wide reveal-scale" data-delay="1" data-full="https://images.pexels.com/photos/8612992/pexels-photo-8612992.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600" data-caption="Cada semana, nuevas manualidades y proyectos en grupo">
-          <img src="https://images.pexels.com/photos/8612992/pexels-photo-8612992.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600" alt="Grupo de niños haciendo manualidades en el salón, vista aérea" width="1600" height="800" loading="lazy">
-          <span class="gallery-overlay"><span>Aprender Jugando</span></span>
-        </button>
       </div>
     </div>
   </section>
@@ -558,7 +581,7 @@
             <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="square"/></svg>
           </a>
         </div>
-        <div class="info-card info-card--dark">
+        <div class="info-card info-card--dark grain">
           <h3>¿Prefieres visitarnos?</h3>
           <p>Conoce nuestra ubicación exacta y cómo llegar a Bambinis en Fracc. Justo Sierra.</p>
           <a href="#ubicacion" class="link-cta light">
@@ -573,7 +596,7 @@
 </main>
 
 <!-- ==================== FOOTER ==================== -->
-<footer class="site-footer">
+<footer class="site-footer grain">
   <div class="container footer-grid">
     <div class="footer-brand">
       <a href="#inicio" class="logo logo--footer" aria-label="Bambinis — Inicio">
@@ -643,9 +666,16 @@
   <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Cerrar imagen">
     <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19" stroke="currentColor" stroke-width="1.8"/></svg>
   </button>
+  <button type="button" class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Imagen anterior">
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 5l-7 7 7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <button type="button" class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Imagen siguiente">
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
   <figure class="lightbox-figure">
     <img src="" alt="" id="lightbox-img">
     <figcaption id="lightbox-caption"></figcaption>
+    <span class="lightbox-counter" id="lightbox-counter"></span>
   </figure>
 </div>
 
